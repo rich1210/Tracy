@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="wallpaper_settings"
+    android:title="@string/wallpaper_settings" >
+
+	<!-- Ad Placeholder -->
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="rotate"
+        android:summary="@string/rotateSummary"
+        android:title="@string/rotateTitle" />
+	<CheckBoxPreference
+        android:defaultValue="true"
+        android:key="doubleTap"
+        android:summary="@string/doubleTapSummary"
+        android:title="@string/doubleTapTitle" />
+	<CheckBoxPreference
+        android:defaultValue="false"
+        android:key="swipeEmul"
+        android:summary="@string/simulateSwipeSummary"
+        android:title="@string/simulateSwipeTitle" />
+		
+</PreferenceScreen>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">YourProjectName</string>
+	<string name="app_description">YourProjectDescription</string>
+	
+	
+	<string name="wallpaper_settings">Settings</string>
+    
+    <string name="rotateTitle">Rotate Cubes</string>
+    <string name="rotateSummary">Enable or disable cubes rotation</string>
+	
+	<string name="doubleTapTitle">Double Tap</string>
+  	<string name="doubleTapSummary">Double tap anywhere on the home screen to open this menu.</string>
+	
+	<string name="simulateSwipeTitle">Simulate Swipe</string>
+  	<string name="simulateSwipeSummary">Simulate Swipe.</string>
+</resources>
