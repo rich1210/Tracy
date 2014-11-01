@@ -232,6 +232,20 @@ public class FrozenSwirlLWP extends GLWallpaperService implements SharedPreferen
 		 */
 		swipeEmul = this.pPrefs.getBoolean("swipeEmul", false);
 		simulateSwipe.isEnabled(swipeEmul);
+		
+		
+		SharedPreferences myPrefsPlayer = getSharedPreferences("NeonGridLWSettings", 0);
+		
+		UnityPlayer.UnitySendMessage("Set Color Scr", "SetColor1", 	String.valueOf(myPrefsPlayer.getFloat("redVal", 1F)) 	+ "," +
+																	String.valueOf(myPrefsPlayer.getFloat("greenVal", 1F)) 	+ "," +
+																	String.valueOf(myPrefsPlayer.getFloat("blueVal", 1F)) 	+ "," + 
+																	String.valueOf(myPrefsPlayer.getFloat("redVal", 1F)) 	+ "," +
+																	String.valueOf(myPrefsPlayer.getFloat("greenVal", 1F)) 	+ "," +
+																	String.valueOf(myPrefsPlayer.getFloat("blueVal", 1F))	+ "," +
+																	String.valueOf(myPrefsPlayer.getFloat("redVal", 1F)) 	+ "," +
+																	String.valueOf(myPrefsPlayer.getFloat("greenVal", 1F)) 	+ "," +
+																	String.valueOf(myPrefsPlayer.getFloat("blueVal", 1F)));
+				
 	}
 
 	/**

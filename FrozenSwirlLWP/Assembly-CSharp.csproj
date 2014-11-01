@@ -37,17 +37,22 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\SetColorsSrc.cs" />
+     <Compile Include="Assets\SettingsScr.cs" />
+     <Compile Include="Assets\Test.cs" />
      <Compile Include="Assets\Uni2LWP\Scripts\HomeSwitch.cs" />
      <Compile Include="Assets\Uni2LWP\Scripts\Rotate.cs" />
+     <Compile Include="Assets\colorScr.cs" />
      <Compile Include="Assets\particles.cs" />
      <Compile Include="Assets\snowflakeSpin.cs" />
+     <Compile Include="Assets\stopScr.cs" />
      <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Cut Out Specular.shader" />
      <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurface Free Cut Out Opaque Bump.shader" />
      <None Include="Assets\Hard Surface Free\HardSurface Shaders\HardSurfacePro Hidden Front Transparent.shader" />
