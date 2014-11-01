@@ -48,7 +48,7 @@ public class FrozenSwirlLWPSettings extends PreferenceActivity implements Shared
 					float finalBlue = (float) (blue/255.0);
 					
 					// save values for unity message
-					SharedPreferences myPrefsPlayer = getSharedPreferences("NeonGridLWSettings", 0);
+					SharedPreferences myPrefsPlayer = getSharedPreferences("FrozenSwirlLWPLWSettings", 0);
 					SharedPreferences.Editor prefsEditorPlayer = myPrefsPlayer.edit();	
 					prefsEditorPlayer.putFloat("redVal", finalRed );
 					prefsEditorPlayer.putFloat("greenVal", finalGreen );
@@ -78,7 +78,7 @@ public class FrozenSwirlLWPSettings extends PreferenceActivity implements Shared
 	      mSeekBar.setProgress(progress); 
 	    
 	 // save values for unity message
-		SharedPreferences myPrefsPlayer = getSharedPreferences("NeonGridLWSettings", 0);
+		SharedPreferences myPrefsPlayer = getSharedPreferences("FrozenSwirlLWPLWSettings", 0);
 		SharedPreferences.Editor prefsEditorPlayer = myPrefsPlayer.edit();	
 		prefsEditorPlayer.putInt("seek", progress );
 		prefsEditorPlayer.commit();
