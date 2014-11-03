@@ -598,7 +598,7 @@ public class FrozenSwirlLWPSettings extends PreferenceActivity implements Shared
 	      mSeekBar.setProgress(progress); 
 	    
 	 // save values for unity message
-		SharedPreferences myPrefsPlayer = getSharedPreferences("FrozenSwirlLWPLWSettings", 0);
+		SharedPreferences myPrefsPlayer = getSharedPreferences(FrozenSwirlLWP.SHARED_PREFS_NAME, 0);
 		SharedPreferences.Editor prefsEditorPlayer = myPrefsPlayer.edit();	
 		prefsEditorPlayer.putInt("seek", progress );
 		prefsEditorPlayer.commit();

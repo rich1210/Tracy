@@ -5,10 +5,18 @@
       <File FileName="Assets\SettingsScr.cs" Line="1" Column="1" />
       <File FileName="Assets\snowflakeSpin.cs" Line="1" Column="1" />
       <File FileName="Assets\particles.cs" Line="1" Column="1" />
+<<<<<<< HEAD
+      <File FileName="Assets\Uni2LWP\Scripts\HomeSwitch.cs" Line="1" Column="1" />
+      <File FileName="Assets\colorScr.cs" Line="1" Column="1" />
+      <File FileName="Assets\SetColorsSrc.cs" Line="30" Column="31" />
+      <File FileName="Assets\Test.cs" Line="1" Column="1" />
+      <File FileName="Assets\stopScr.cs" Line="1" Column="1" />
+=======
       <File FileName="Assets\Uni2LWP\Scripts\HomeSwitch.cs" Line="107" Column="39" />
       <File FileName="Assets\colorScr.cs" Line="85" Column="4" />
       <File FileName="Assets\SetColorsSrc.cs" Line="88" Column="27" />
       <File FileName="Assets\WhenTappedScr.cs" Line="13" Column="34" />
+>>>>>>> 9b0d91f5c6e3a5a5e3be4c36ac3c53fbc7dc3b8a
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
