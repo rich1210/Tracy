@@ -236,16 +236,69 @@ public class FrozenSwirlLWP extends GLWallpaperService implements SharedPreferen
 		
 		SharedPreferences myPrefsPlayer = getSharedPreferences("FrozenSwirlLWPLWSettings", 0);
 		
-		UnityPlayer.UnitySendMessage("Set Color Scr", "SetColor1", 	String.valueOf(myPrefsPlayer.getFloat("redVal", 1F)) 	+ "," +
-																	String.valueOf(myPrefsPlayer.getFloat("greenVal", 1F)) 	+ "," +
-																	String.valueOf(myPrefsPlayer.getFloat("blueVal", 1F)) 	+ "," + 
-																	String.valueOf(myPrefsPlayer.getFloat("redVal", 1F)) 	+ "," +
-																	String.valueOf(myPrefsPlayer.getFloat("greenVal", 1F)) 	+ "," +
-																	String.valueOf(myPrefsPlayer.getFloat("blueVal", 1F))	+ "," +
-																	String.valueOf(myPrefsPlayer.getFloat("redVal", 1F)) 	+ "," +
-																	String.valueOf(myPrefsPlayer.getFloat("greenVal", 1F)) 	+ "," +
-																	String.valueOf(myPrefsPlayer.getFloat("blueVal", 1F)));
-				
+		UnityPlayer.UnitySendMessage("Settings", "setColor1", 	String.valueOf(myPrefsPlayer.getFloat("redVal1_1", 1F)) 	+ "," +
+																	String.valueOf(myPrefsPlayer.getFloat("greenVal1_1", 1F)) 	+ "," +
+																	String.valueOf(myPrefsPlayer.getFloat("blueVal1_1", 1F)) 	+ "," + 
+																	String.valueOf(myPrefsPlayer.getFloat("redVal1_2", 1F)) 	+ "," +
+																	String.valueOf(myPrefsPlayer.getFloat("greenVal1_2", 1F)) 	+ "," +
+																	String.valueOf(myPrefsPlayer.getFloat("blueVal1_2", 1F))	+ "," +
+																	String.valueOf(myPrefsPlayer.getFloat("redVal1_3", 1F)) 	+ "," +
+																	String.valueOf(myPrefsPlayer.getFloat("greenVal1_3", 1F)) 	+ "," +
+																	String.valueOf(myPrefsPlayer.getFloat("blueVal1_3", 1F)));
+		
+		UnityPlayer.UnitySendMessage("Settings", "setColor2", 	String.valueOf(myPrefsPlayer.getFloat("redVal2_1", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal2_1", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal2_1", 1F)) 	+ "," + 
+																String.valueOf(myPrefsPlayer.getFloat("redVal2_2", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal2_2", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal2_2", 1F))	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("redVal2_3", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal2_3", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal2_3", 1F)));
+		
+		UnityPlayer.UnitySendMessage("Settings", "setColor3", 	String.valueOf(myPrefsPlayer.getFloat("redVal3_1", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal3_1", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal3_1", 1F)) 	+ "," + 
+																String.valueOf(myPrefsPlayer.getFloat("redVal3_2", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal3_2", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal3_2", 1F))	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("redVal3_3", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal3_3", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal3_3", 1F)));
+		
+		UnityPlayer.UnitySendMessage("Settings", "setColor4", 	String.valueOf(myPrefsPlayer.getFloat("redVal4_1", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal4_1", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal4_1", 1F)) 	+ "," + 
+																String.valueOf(myPrefsPlayer.getFloat("redVal4_2", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal4_2", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal4_2", 1F))	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("redVal4_3", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal4_3", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal4_3", 1F)));
+		
+		UnityPlayer.UnitySendMessage("Settings", "setColor5", 	String.valueOf(myPrefsPlayer.getFloat("redVal5_1", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal5_1", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal5_1", 1F)) 	+ "," + 
+																String.valueOf(myPrefsPlayer.getFloat("redVal5_2", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal5_2", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal5_2", 1F))	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("redVal5_3", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal5_3", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal5_3", 1F)));
+		
+		UnityPlayer.UnitySendMessage("Settings", "setColor6", 	String.valueOf(myPrefsPlayer.getFloat("redVal6_1", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal6_1", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal6_1", 1F)) 	+ "," + 
+																String.valueOf(myPrefsPlayer.getFloat("redVal6_2", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal6_2", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal6_2", 1F))	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("redVal6_3", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal6_3", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal6_3", 1F)));
+
+		
+		
+																
 	}
 
 	/**

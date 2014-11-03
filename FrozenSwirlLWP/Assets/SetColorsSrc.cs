@@ -17,6 +17,8 @@ public class SetColorsSrc : MonoBehaviour
 	
 	float[] threeColor = new float[9];
 	
+	string test;
+	
 	void setAllColor( int index, string setColor )
 	{
 		
@@ -41,8 +43,9 @@ public class SetColorsSrc : MonoBehaviour
 		colorArray[index,2,0] = threeColor[6];
 		colorArray[index,2,1] = threeColor[7];
 		colorArray[index,2,2] = threeColor[8];
-	
 		
+		
+		changed = true;
 	}
 	
 	public static float getColorSet(int index, int colorNum, int RBG)
@@ -62,63 +65,42 @@ public class SetColorsSrc : MonoBehaviour
 
 	void setColor1( string color)	
 	{
-		
 		 setAllColor( 0, color);
-		
-		changed = true;
 	}
 	
-	/*
-	void setColor2( string R1, string B1, string G1,
-					string R2, string B2, string G2,
-					string R3, string B3, string G3)	
+	void setColor2( string color )	
 	{
-		 setAllColor( 1, R1, B1, G1, R2, B2, G2, R3, B3, G3);
-		
-		colors[1].changed = true;
+		 setAllColor( 1, color);
 	}
 	
-	
-	void setColor3( string R1, string B1, string G1,
-					string R2, string B2, string G2,
-					string R3, string B3, string G3)	
+	void setColor3( string color )	
 	{
-		 setAllColor( 2, R1, B1, G1, R2, B2, G2, R3, B3, G3);
-		
-		colors[2].changed = true;
-		
+		 setAllColor( 2, color);
 	}
 	
-	
-	void setColor4( string R1, string B1, string G1,
-					string R2, string B2, string G2,
-					string R3, string B3, string G3)	
+	void setColor4( string color )	
 	{
-		 setAllColor( 3, R1, B1, G1, R2, B2, G2, R3, B3, G3);
-		
-		colors[3].changed = true;
-		
+		 setAllColor( 3, color);
 	}
 	
-	
-	void setColor5( string R1, string B1, string G1,
-					string R2, string B2, string G2,
-					string R3, string B3, string G3)	
+	void setColor5( string color )	
 	{
-		 setAllColor( 4, R1, B1, G1, R2, B2, G2, R3, B3, G3);
-		
-		colors[4].changed = true;
-		
+		 setAllColor( 4, color);
 	}
 	
-	void setColor6( string R1, string B1, string G1,
-					string R2, string B2, string G2,
-					string R3, string B3, string G3)	
+	void setColor6( string color )	
 	{
-		 setAllColor( 5, R1, B1, G1, R2, B2, G2, R3, B3, G3);
-		
-		colors[5].changed = true;
-		
+		test = color;
+		 setAllColor( 5, color);
 	}
-	*/
+	
+	
+	void OnGUI() 
+	{
+
+		if(GUI.Button (new Rect(0, 0, Screen.width/4, Screen.height/4), "Mes :" + HomeSwitch.getTapped()))
+		{
+
+		}
+	}
 }

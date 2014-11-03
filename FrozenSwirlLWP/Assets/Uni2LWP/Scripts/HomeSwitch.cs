@@ -57,7 +57,7 @@ public class HomeSwitch : MonoBehaviour
 		
 	}
 
-
+	
 
 	/// <summary>
 	///	Rotate all cubes 
@@ -81,9 +81,14 @@ public class HomeSwitch : MonoBehaviour
 		}
 		
 		
+		
 	}
 
 	
+	
+	public static bool tapped = false;
+	public static bool ctrTapped = false;
+	private int counter =0 ;
 	
 	/// <summary>
 	/// Receives XY touch values. 
@@ -100,9 +105,29 @@ public class HomeSwitch : MonoBehaviour
 		if (touchCoord!=null){
 			touchCoord.text = "(" + pos.x + "," + pos.y + ")";
 		}
+		
+		counter++;
+		
+		if( counter == 1)
+		{
+			tapped = true;
+			ctrTapped = true;
+		}
+		
+		// if they hold there finger down it will not genorate a tone of partical genorators 
+		// if the animaton finish after tapping then they can animate the tap again
+		if( counter >= 200 || ctrTapped == false )
+		{
+			counter = 0;
+		}
+		
 	}
 
+	public static bool getTapped(){ return tapped; }
+	public static void setTapped(bool val ) { tapped = val; } 
 	
+	public static bool getTappedCtr(){ return ctrTapped; }
+	public static void setTappedCtr(bool val ) { ctrTapped = val; } 
 	
 	
 	#if UNITY_EDITOR
