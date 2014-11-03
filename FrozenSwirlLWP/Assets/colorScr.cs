@@ -14,10 +14,40 @@ public class colorScr : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
+		colors = new Color[5]
+		{ 
+			new Color (
+				SetColorsSrc.getColorSet(0, 0, 0),
+				SetColorsSrc.getColorSet(0, 0, 1),
+				SetColorsSrc.getColorSet(0, 0, 2)
+				),
+			
+			new Color (
+				SetColorsSrc.getColorSet(0, 1, 0),
+				SetColorsSrc.getColorSet(0, 1, 1),
+				SetColorsSrc.getColorSet(0, 1, 2)
+				),
+			
+			new Color (
+				SetColorsSrc.getColorSet(0, 2, 0),
+				SetColorsSrc.getColorSet(0, 2, 1),
+				SetColorsSrc.getColorSet(0, 2, 2)
+				),
+			
+			new Color (
+				SetColorsSrc.getColorSet(0, 2, 0),
+				SetColorsSrc.getColorSet(0, 2, 1),
+				SetColorsSrc.getColorSet(0, 2, 2)
+				),
+			
+			new Color (
+				SetColorsSrc.getColorSet(0, 2, 0),
+				SetColorsSrc.getColorSet(0, 2, 1),
+				SetColorsSrc.getColorSet(0, 2, 2)
+				),
+			
+			};
 		
-		colors = new Color[5]{ new Color (SetColorsSrc.getColorSet(0, 0, 0),
-								  SetColorsSrc.getColorSet(0, 0, 1),
-								SetColorsSrc.getColorSet(0, 0, 2)), Color.green, Color.blue, Color.cyan, Color.white};
 		
 		Debug.Log (SetColorsSrc.getColorSet(0, 0, 0) + " " +
 				   SetColorsSrc.getColorSet(0, 0, 1) + " " +
@@ -31,24 +61,69 @@ public class colorScr : MonoBehaviour {
 		
 		if(SetColorsSrc.getChangeCol())
 		{
+			//resetColors
+	
+			
 			//first color option
+			setColor(0);
 			paArray[0].colorAnimation = colors;
-			/*
-			//second color option
-			paArray[index].colorAnimation[2] = new Color(coloring.colors[index].colorArray[1,0],
-														coloring.colors[index].colorArray[1,1],
-														coloring.colors[index].colorArray[1,2]);
 			
-			//third color option
-			paArray[index].colorAnimation[3] = new Color(coloring.colors[index].colorArray[3,0],
-														coloring.colors[index].colorArray[3,1],
-														coloring.colors[index].colorArray[3,2]);
-			*/
+			setColor(1);
+			paArray[1].colorAnimation = colors;
 			
+			setColor(2);
+			paArray[2].colorAnimation = colors;
+			
+			setColor(3);
+			paArray[3].colorAnimation = colors;
+			
+			setColor(4);
+			paArray[4].colorAnimation = colors;
+			
+			setColor(5);
+			paArray[5].colorAnimation = colors;
 			
 			SetColorsSrc.setChangeCol( false );
 		}
 		
 	
+	}
+	
+	
+	void setColor( int index)
+	{
+		colors = new Color[5]
+		{ 
+			new Color (
+				SetColorsSrc.getColorSet(index, 0, 0),
+				SetColorsSrc.getColorSet(index, 0, 1),
+				SetColorsSrc.getColorSet(index, 0, 2)
+				),
+			
+			new Color (
+				SetColorsSrc.getColorSet(index, 1, 0),
+				SetColorsSrc.getColorSet(index, 1, 1),
+				SetColorsSrc.getColorSet(index, 1, 2)
+				),
+			
+			new Color (
+				SetColorsSrc.getColorSet(index, 2, 0),
+				SetColorsSrc.getColorSet(index, 2, 1),
+				SetColorsSrc.getColorSet(index, 2, 2)
+				),
+			
+			new Color (
+				SetColorsSrc.getColorSet(index, 2, 0),
+				SetColorsSrc.getColorSet(index, 2, 1),
+				SetColorsSrc.getColorSet(index, 2, 2)
+				),
+			
+			new Color (
+				SetColorsSrc.getColorSet(index, 2, 0),
+				SetColorsSrc.getColorSet(index, 2, 1),
+				SetColorsSrc.getColorSet(index, 2, 2)
+				),
+			
+			};
 	}
 }
