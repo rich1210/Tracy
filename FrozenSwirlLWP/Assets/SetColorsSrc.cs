@@ -11,7 +11,7 @@ public class SetColorsSrc : MonoBehaviour
 		 * [1]string R2, string B2, string G2,
 		 * [2]string R3, string B3, string G3
 		 */
-	public static float[, ,] colorArray = new float[6,3,3]; // first color // second RBG
+	public static float[, ,] colorArray = new float[7,3,3]; // first color // second RBG
 		
 	public static bool changed = true;
 	
@@ -90,8 +90,15 @@ public class SetColorsSrc : MonoBehaviour
 	
 	void setColor6( string color )	
 	{
-		test = color;
 		 setAllColor( 5, color);
+	}
+	
+	//explostion
+	//only needs two colors
+	void setColor7( string color )	
+	{
+		test = color;
+		setAllColor( 6, color);
 	}
 	
 	

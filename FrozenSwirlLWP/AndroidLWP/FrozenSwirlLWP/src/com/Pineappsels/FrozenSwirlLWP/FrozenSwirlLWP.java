@@ -295,6 +295,17 @@ public class FrozenSwirlLWP extends GLWallpaperService implements SharedPreferen
 																String.valueOf(myPrefsPlayer.getFloat("redVal6_3", 1F)) 	+ "," +
 																String.valueOf(myPrefsPlayer.getFloat("greenVal6_3", 1F)) 	+ "," +
 																String.valueOf(myPrefsPlayer.getFloat("blueVal6_3", 1F)));
+		
+		
+		UnityPlayer.UnitySendMessage("Settings", "setColor7", 	String.valueOf(myPrefsPlayer.getFloat("redVal7_1", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal7_1", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal7_1", 1F)) 	+ "," + 
+																String.valueOf(myPrefsPlayer.getFloat("redVal7_2", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal7_2", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal7_2", 1F))	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("redVal7_2", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("greenVal7_2", 1F)) 	+ "," +
+																String.valueOf(myPrefsPlayer.getFloat("blueVal7_2", 1F)));
 
 		
 		

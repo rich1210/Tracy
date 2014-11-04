@@ -5,14 +5,22 @@ public class colorScr : MonoBehaviour {
 	
 	
 	public ParticleAnimator[] paArray = new ParticleAnimator[6];
+	public ParticleSystem burstAnima;
 	private int index; 
 	Color[] colors;
+	
+	Color burstOne;
+	Color burstTwo;
+	
+	private bool twoCol;
 	
 	
 	//colorScr.colors[0].colorArray[0,0]
 	
 	// Use this for initialization
 	void Start () {
+		
+		
 		
 		colors = new Color[5]
 		{ 
@@ -57,7 +65,21 @@ public class colorScr : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {	
+	void Update () {
+		
+		//color animation for expolsion tap
+		if( twoCol)
+		{
+			burstAnima.startColor = burstOne;
+			twoCol = false;
+		}
+		else
+		{
+			burstAnima.startColor = burstTwo;
+			twoCol = true;
+		}
+		
+		
 		
 		if(SetColorsSrc.getChangeCol())
 		{
@@ -82,6 +104,11 @@ public class colorScr : MonoBehaviour {
 			
 			setColor(5);
 			paArray[5].colorAnimation = colors;
+			
+			setColor(6);
+			burstOne = colors[0];
+			burstTwo = colors[1];
+			
 			
 			SetColorsSrc.setChangeCol( false );
 		}

@@ -579,7 +579,69 @@ public class FrozenSwirlLWPSettings extends PreferenceActivity implements Shared
 	
 							        });
 							        ((ColorPickerPreference)findPreference("color6_3")).setAlphaSliderEnabled(false);
-							    
+
+							        
+							        ///////////////////////////////////////////////////////////////////////////////////////
+							        /////////////////////////////////////////////////////////////////////////////////////
+							        
+							        
+						        // get value of color First color 1
+						      ((ColorPickerPreference)findPreference("color7_1")).setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+	
+									@Override
+									public boolean onPreferenceChange(Preference preference, Object newValue) {
+										String value = ColorPickerPreference.convertToARGB(Integer.valueOf(String.valueOf(newValue)));
+									
+										// set up values
+										int red = Integer.decode("0x"+value.substring(3).substring(0, value.length()-7));
+										int green = Integer.decode("0x"+value.substring(5).substring(0, value.length()-7));
+										int blue = Integer.decode("0x"+value.substring(7).substring(0, value.length()-7));
+										float finalRed = (float) (red/255.00);
+										float finalGreen = (float) (green/255.0);
+										float finalBlue = (float) (blue/255.0);
+										
+										// save values for unity message
+										SharedPreferences myPrefsPlayer = getSharedPreferences(FrozenSwirlLWP.SHARED_PREFS_NAME, 0);
+										SharedPreferences.Editor prefsEditorPlayer = myPrefsPlayer.edit();	
+										prefsEditorPlayer.putFloat("redVal7_1", finalRed );
+										prefsEditorPlayer.putFloat("greenVal7_1", finalGreen );
+										prefsEditorPlayer.putFloat("blueVal7_1", finalBlue );
+										prefsEditorPlayer.commit();
+										
+										return true;
+									}
+	
+						        });
+						        ((ColorPickerPreference)findPreference("color7_1")).setAlphaSliderEnabled(false);
+						        
+							// get value of color First color 2
+						      ((ColorPickerPreference)findPreference("color7_2")).setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+	
+									@Override
+									public boolean onPreferenceChange(Preference preference, Object newValue) {
+										String value = ColorPickerPreference.convertToARGB(Integer.valueOf(String.valueOf(newValue)));
+									
+										// set up values
+										int red = Integer.decode("0x"+value.substring(3).substring(0, value.length()-7));
+										int green = Integer.decode("0x"+value.substring(5).substring(0, value.length()-7));
+										int blue = Integer.decode("0x"+value.substring(7).substring(0, value.length()-7));
+										float finalRed = (float) (red/255.00);
+										float finalGreen = (float) (green/255.0);
+										float finalBlue = (float) (blue/255.0);
+										
+										// save values for unity message
+										SharedPreferences myPrefsPlayer = getSharedPreferences(FrozenSwirlLWP.SHARED_PREFS_NAME, 0);
+										SharedPreferences.Editor prefsEditorPlayer = myPrefsPlayer.edit();	
+										prefsEditorPlayer.putFloat("redVal7_2", finalRed );
+										prefsEditorPlayer.putFloat("greenVal7_2", finalGreen );
+										prefsEditorPlayer.putFloat("blueVal7_2", finalBlue );
+										prefsEditorPlayer.commit();
+										
+										return true;
+									}
+	
+						        });
+						        ((ColorPickerPreference)findPreference("color7_2")).setAlphaSliderEnabled(false);
 					        
 	}
 

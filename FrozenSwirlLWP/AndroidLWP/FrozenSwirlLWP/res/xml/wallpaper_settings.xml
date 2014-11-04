@@ -153,6 +153,22 @@
 		        android:key="color6_3"
 		        android:summary="           Choose a color"
 		        android:title=  "         Color 3" />
+			
+			
+			<PreferenceScreen android:title = "Explostion Tap"> </PreferenceScreen>
+			
+				<net.margaritov.preference.colorpicker.ColorPickerPreference
+		        android:defaultValue="0xffffffff"
+		        android:key="color7_1"
+		        android:summary="           Choose a color"
+		        android:title=  "         Color 1" />
+			
+			<net.margaritov.preference.colorpicker.ColorPickerPreference
+		        android:defaultValue="0xffffffff"
+		        android:key="color7_2"
+		        android:summary="           Choose a color"
+		        android:title=  "         Color 2" />
+			
 		
 		
 		

@@ -3,8 +3,7 @@ using System.Collections;
 
 public class WhenTappedScr : MonoBehaviour {
 	
-	public GameObject explode;
-	GameObject copy;
+	public ParticleSystem explode;
 	bool ready = true; 
 	bool test = true;
 	bool test2 = true;
@@ -17,10 +16,6 @@ public class WhenTappedScr : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		explode.gameObject.SetActive(false);
-		
-
-	
 	}
 	
 	// Update is called once per frame
@@ -29,25 +24,10 @@ public class WhenTappedScr : MonoBehaviour {
 		if(HomeSwitch.getTapped())
 		{
 			//anima = true;
-			copy = (GameObject)Instantiate( explode);
-			copy.gameObject.SetActive(true);
+			explode.enableEmission = true;
 			HomeSwitch.setTapped(false);
 			//test = false;
-		}
-		
-		if(HomeSwitch.getTappedCtr())
-		{
-			counter++;
-			if( counter >= 162)
-			{
-				Destroy(copy);
-				counter = 0;
-				//anima = false;
-				HomeSwitch.setTappedCtr(false);
-				//test2 = false;
-			}
-		}
-			
+		}	
 		
 	}
 				
